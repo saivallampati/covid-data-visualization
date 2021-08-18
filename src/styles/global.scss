@@ -1,6 +1,10 @@
 .global-data {
   display: flex;
   justify-content: space-between;
+  border: 1px solid #efefef;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  border-radius: 3px;
   &__row {
     display: flex;
     flex-direction: column;

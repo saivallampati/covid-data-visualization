@@ -3,14 +3,17 @@ import { globalDetails } from "../constants/globalData";
 
 function Global({ global }) {
   return (
-    <div className="global-data">
-      {Object.keys(globalDetails).map((key, index) => (
-        <div key={index} className="global-data__row">
-          <p>{key}</p>
-          <p>{global[globalDetails[key]]}</p>
-        </div>
-      ))}
-    </div>
+    <>
+      <h2>Global Summary</h2>
+      <div className="global-data">
+        {Object.keys(globalDetails).map((key, index) => (
+          <div key={index} className="global-data__row">
+            <p>{key}</p>
+            <p>{global[globalDetails[key]]}</p>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
 
