@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "webpack serve",
+        "build": "NODE_ENV=production webpack",
         "build-dev": "webpack"
     },
     "author": "Satyasai",
@@ -27,6 +28,7 @@
         "mini-css-extract-plugin": "^2.2.0"
     },
     "dependencies": {
+        "antd": "^4.16.12",
         "react": "^17.0.2",
         "react-dom": "^17.0.2"
     }

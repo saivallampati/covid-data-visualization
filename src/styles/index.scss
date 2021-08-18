@@ -1,3 +1,6 @@
-body{
-    background-color: peachpuff;
+@import "./global.scss";
+
+body {
+  max-width: 1200px;
+  margin: 0 auto !important;
 }
