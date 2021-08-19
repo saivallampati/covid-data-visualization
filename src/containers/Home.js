@@ -4,6 +4,7 @@ import { Button, Skeleton } from "antd";
 import CountyWiseData from "../components/CountyWiseData";
 import Global from "../components/Global";
 import useFetch from "../hooks/useFetch";
+import MainHeader from "../components/MainHeader";
 
 function Home() {
   const [reload, setReload] = useState(true);
@@ -11,8 +12,10 @@ function Home() {
   return (
     <div className="home-container">
       <div className="home-container__header">
-        <h1>Covid Data Visualization</h1>
-        <Button onClick={() => setReload(!reload)}>Refresh Data</Button>
+        <MainHeader header={"Covid Data Visualization"} />
+        <Button type="primary" onClick={() => setReload(!reload)}>
+          Refresh Data
+        </Button>
       </div>
       {!data || isLoading ? (
         <Skeleton loading active paragraph />

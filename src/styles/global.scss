@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   border: 1px solid #efefef;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgb(66 66 66 / 8%), 0 1px 3px 1px rgb(66 66 66 / 16%);
   margin-bottom: 30px;
   padding: 10px 10px;
   border-radius: 3px;
@@ -9,5 +11,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    &__key {
+      font-size: 13px;
+      font-weight: 500;
+    }
   }
 }
